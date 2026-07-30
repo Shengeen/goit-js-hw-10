@@ -18,8 +18,43 @@
     <main>
       <div class="container">
         <h1 class="main-title">
-          <span class="main-title-gradient">This is snackbar</span>
+          <span class="main-title-gradient">This is a snackbar</span>
         </h1>
+        <form class="form">
+          <label class="delay-label">
+            Delay (ms)
+            <input class="delay-input" type="number" name="delay" required />
+          </label>
+
+          <fieldset class="fieldset-form">
+            <legend class="state-legend">State</legend>
+            <label class="state-label">
+              <input
+                class="state-input"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label>
+              <input
+                class="state-input"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button class="snackbar-btn" type="submit">
+            Create notification
+          </button>
+        </form>
+
         <load src="./partials/back-link.html" />
       </div>
     </main>
